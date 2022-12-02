@@ -1,12 +1,4 @@
-
-
-/*const random_message = () => {
-}
-*/
-
-
 //set up pronouns and animals list
-
 const pronouns = ['we','you']; 
 const animals = ['Aardvark',
 'African Elephant',
@@ -388,8 +380,12 @@ const animals = ['Aardvark',
 'Zebu']
 
 
+const random_animal = () => {
+    return animals[Math.floor(Math.random() * animals.length)];
+}
 
+console.log(random_animal()); 
 
-
-
+const random_message = () => {
+}
 
