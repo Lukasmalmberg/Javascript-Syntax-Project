@@ -379,13 +379,19 @@ const animals = ['Aardvark',
 'Zorilla',
 'Zebu']
 
+const word = 'word'
 
 const random_animal = () => {
     return animals[Math.floor(Math.random() * animals.length)];
 }
 
-console.log(random_animal()); 
-
-const random_message = () => {
+const random_pronoun = () => {
+    return pronouns[Math.floor(Math.random() * pronouns.length)]
 }
+
+const random_messages = () => {
+    return `${random_pronoun()} are a ${random_animal()} in a world filled with ${random_animal()}`
+}
+
+console.log(random_messages())
 
